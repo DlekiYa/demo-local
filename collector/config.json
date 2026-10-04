@@ -1,0 +1,26 @@
+{
+  "id": "demo-local",
+  "name": "Local Demo",
+  "version": "1.0",
+  "config": {
+    "fields": [
+      {
+        "field_id": "note",
+        "type": "text_input",
+        "title": "Заметка",
+        "validation": { "required": true }
+      }
+    ],
+    "flow": {
+      "steps": [
+        {
+          "id": "main",
+          "screen": "scroll_form",
+          "form_title": "Форма",
+          "field_ids": ["note"]
+        },
+        { "id": "check", "screen": "review" }
+      ]
+    }
+  }
+}
